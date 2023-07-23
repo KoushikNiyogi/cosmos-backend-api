@@ -16,6 +16,7 @@ load_dotenv()
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
 MONGO_URL = os.environ.get("MONGO_URL")
+print(OPENAI_API_KEY)
 
 client = MongoClient(MONGO_URL)
 db = client['cosmos-Flask']
