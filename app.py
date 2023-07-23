@@ -77,6 +77,7 @@ def query_builder(query):
 
     # Extract the response from the API call
     response_data = response.json()
+    print(response_data['choices'])
     response_text = response_data['choices'][0]['message']['content']
     return response_text
 
